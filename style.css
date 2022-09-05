@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&family=Rubik:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik' , sans-serif;;
+}
+
+.header{
+    position: relative;
+    padding: 50px;
+    padding-bottom: 100px;
+    background: url("./images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > h2{
+    font-size: 40px;
+    font-family: 'Rubik' , sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header input{
+    box-sizing: border-box;
+    width: 40%;
+    padding: 18px 0 18px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 1em 0 0 1em;
+    outline: none;
+}
+
+.header button{
+   background-color: black;
+   padding: 0 18px 0 18px;
+   border-radius: 0 1em 1em 0;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+
+/*Result section style*/
+.result{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    right: 20%;
+    background-color: white;
+    z-index: 2000;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 1.5em;
+}
+.result > div{
+    padding: 7.5px 40px 7.5px 15px;
+    text-align: left;
+}
+.result p{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.result > div+div{
+    border-left: 2px solid lightgray;
+}
+
+
+.map{
+    width: 100%;
+    height: 510px;
+}
+
+
+
+@media screen and (max-width: 1282px){
+    .result{
+        left: 10%;
+        right: 10%;
+    }
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    .result{
+        flex-direction:column;
+        top: 55%;
+
+    }
+
+    .header{
+        padding-bottom: 200px;
+    }
+
+    .header >  h2{
+        text-align: center;
+    }
+}
+
